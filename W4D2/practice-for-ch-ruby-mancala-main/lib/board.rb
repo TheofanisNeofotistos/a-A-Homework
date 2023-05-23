@@ -2,9 +2,9 @@ class Board
   attr_accessor :cups
 
   def initialize(name1, name2)
-    @cups = Array.new(14){Array.new(4)}
+    @cups = Array.new(14){Array.new(4,:stone)}
 
-    #[[],[],[],[]] X 13
+    #[:stone,:stone,:stone,:stone] X 13
 
 
   end 
