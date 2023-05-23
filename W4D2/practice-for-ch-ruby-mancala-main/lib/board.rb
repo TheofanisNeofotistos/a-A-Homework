@@ -4,6 +4,9 @@ class Board
   def initialize(name1, name2)
     @cups = Array.new(14){Array.new(4,:stone)}
 
+    
+    
+
     #[:stone,:stone,:stone,:stone] X 13
 
 
