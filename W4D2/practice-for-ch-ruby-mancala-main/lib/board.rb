@@ -2,7 +2,12 @@ class Board
   attr_accessor :cups
 
   def initialize(name1, name2)
-  end
+    @cups = Array.new(14){Array.new(4)}
+
+    #[[],[],[],[]] X 13
+
+
+  end 
 
   def place_stones
     # helper method to #initialize every non-store cup with four stones each
