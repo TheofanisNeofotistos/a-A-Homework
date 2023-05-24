@@ -21,11 +21,11 @@ class Simon
   end
 
   def take_turn
+    self.sequence_length += 1
     self.show_sequence 
     self.require_sequence
     if game_over == false
       return round_success_message
-      self.sequence_length += 1
     end 
   end
 
