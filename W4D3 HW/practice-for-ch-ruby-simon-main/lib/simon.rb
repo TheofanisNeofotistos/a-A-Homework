@@ -13,7 +13,11 @@ class Simon
     until game_over == true 
       self.take_turn
     end
-    return game_over_message && self.reset_game if game_over == true 
+    if game_over == true 
+      self.reset_game 
+    end
+    return game_over_message 
+    
   end
 
   def take_turn
@@ -21,7 +25,7 @@ class Simon
     self.require_sequence
     if game_over == false
       return round_success_message
-      self.sequence_length + 1
+      self.sequence_length += 1
     end 
   end
 
